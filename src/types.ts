@@ -7,6 +7,15 @@ export interface Params {
   feeRate: number;
   slippage: number;
   maxDrawdown: number;
+  // Optional extras used by Bot B. Leaving them unset gives Bot A's behaviour.
+  barSeconds?: number;
+  orderType?: 'market' | 'limit';
+  makerFee?: number;
+  limitOffset?: number;
+  trendSma?: number;
+  volTarget?: number;
+  volLookback?: number;
+  barsPerYear?: number;
 }
 
 export interface Position { qty: number; entryPrice: number; entryTime: number; costBasis: number }

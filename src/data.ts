@@ -23,12 +23,17 @@ async function getJson(url: string): Promise<unknown> {
 }
 
 // Hourly candles in [fromSec, toSec), oldest first.
-export async function fetchHourly(product: string, fromSec: number, toSec: number): Promise<Candle[]> {
+export const fetchHourly = (product: string, fromSec: number, toSec: number) => fetchCandles(product, HOUR, fromSec, toSec);
+
+// UTC daily candles in [fromSec, toSec), oldest first.
+export const fetchDaily = (product: string, fromSec: number, toSec: number) => fetchCandles(product, 86400, fromSec, toSec);
+
+export async function fetchCandles(product: string, gran: number, fromSec: number, toSec: number): Promise<Candle[]> {
   const out = new Map<number, Candle>();
-  const from = Math.floor(fromSec / HOUR) * HOUR;
-  for (let s = from; s < toSec; s += PAGE * HOUR) {
-    const e = s + (PAGE - 1) * HOUR;
-    const url = `${BASE}/products/${product}/candles?granularity=${HOUR}` +
+  const from = Math.floor(fromSec / gran) * gran;
+  for (let s = from; s < toSec; s += PAGE * gran) {
+    const e = s + (PAGE - 1) * gran;
+    const url = `${BASE}/products/${product}/candles?granularity=${gran}` +
       `&start=${new Date(s * 1000).toISOString()}&end=${new Date(e * 1000).toISOString()}`;
     const rows = (await getJson(url)) as number[][];
     if (!Array.isArray(rows)) throw new Error(`Unexpected response for ${url}: ${JSON.stringify(rows).slice(0, 200)}`);

@@ -1,6 +1,6 @@
 # Backtest
 
-Generated 2026-09-28 19:26 UTC by `npm run backtest`. Same engine as the live paper bot.
+Generated 2026-09-28 19:55 UTC by `npm run backtest`. Same engine as the live paper bot.
 
 **Strategy:** EMA 9/21 crossover, long-only, on 4-hour candles for BTC-USD, ETH-USD, SOL-USD. Buy at the next candle's open after the fast EMA crosses above the slow one. Sell at the next open after it crosses back below. Each coin gets a third of the account. The live bot also stops new entries if the account falls 15% below its peak. That switch is off here so the rules themselves are measured.
 
