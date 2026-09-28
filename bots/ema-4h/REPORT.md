@@ -1,6 +1,8 @@
-# Paper trading report
+# Bot A: EMA 9/21 on 4-hour candles
 
-Updated 2026-09-28 19:36 UTC. Paper money only: no real orders are ever sent.
+Updated 2026-09-28 19:59 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
+
+**Rules:** EMA 9/21 crossover on 4-hour candles; market orders at the next open (0.40% fee + 0.05% slippage); ⅓ of equity per coin; entries halt at a 15% drawdown.
 
 **Status:** Running. Checks the market every 4 hours.
 
@@ -8,9 +10,9 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 |  | Bot | Buy & hold (⅓ each, never sells) |
 |---|---:|---:|
-| Equity | $10,000.00 | $10,000.00 |
-| Return | 0.00% | 0.00% |
-| Max drawdown | 0.0% | 0.0% |
+| Equity | $10,000.00 | $9,997.28 |
+| Return | 0.00% | -0.03% |
+| Max drawdown | 0.0% | -0.0% |
 
 ## Go-live bar
 
@@ -21,8 +23,8 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 | Days of paper trading | 30+ | 0.0 | ⏳ |
 | Closed trades | 15+ | 0 | ⏳ |
 | Net return after fees | above 0 | 0.0% | ⏳ |
-| Beats buy & hold | yes | 0.0% vs 0.0% | ⏳ |
-| Max drawdown | under 15%, never halted | 0.0% | ⏳ |
+| Beats buy & hold | yes | 0.0% vs -0.0% | ✅ |
+| Max drawdown | under 15%, never halted | 0.0% | ✅ |
 | Backtest out-of-sample beat buy & hold | yes | -58.7% vs -35.7% | ❌ |
 
 ## Open positions
@@ -35,4 +37,4 @@ None. All cash.
 
 No decisions yet. The bot waits for the next crossover.
 
-Full history: [`data/ledger.csv`](data/ledger.csv) · equity every tick: [`data/equity.csv`](data/equity.csv) · backtest: [`backtest/BACKTEST.md`](backtest/BACKTEST.md)
+Full history: [`ledger.csv`](ledger.csv) · equity every tick: [`equity.csv`](equity.csv) · backtest: [BACKTEST.md](../../backtest/BACKTEST.md)
