@@ -1,0 +1,23 @@
+{
+  "generatedAt": "2026-09-28T19:26:48.372Z",
+  "from": "2023-01-11",
+  "to": "2026-09-28",
+  "full": {
+    "ret": -0.49638961344409427,
+    "benchRet": 3.71829193264215,
+    "maxDD": 0.8000228076924005,
+    "trades": 554,
+    "tradesPerMonth": 12.256637168141593
+  },
+  "outOfSample": {
+    "from": "2025-08-17",
+    "ret": -0.5865555721246258,
+    "benchRet": -0.35710972268296637,
+    "beatBenchmark": false
+  },
+  "monthlyWindows": {
+    "total": 1326,
+    "passedPct": 0.0030165912518853697,
+    "nextBeatBenchPct": 0
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ema-paper-trader",
+  "version": "1.0.0",
+  "description": "Paper-trading bot: EMA 9/21 crossover on BTC, ETH and SOL 4h candles, run by GitHub Actions with a public ledger.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "tick": "node src/run.ts",
+    "backtest": "node src/backtest.ts",
+    "test": "node --test test/*.test.ts"
+  }
+}
