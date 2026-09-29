@@ -1,1 +1,2 @@
 time_utc,symbol,action,price,qty,notional,fee,pnl,reason,cash_after,equity_after
+2026-09-29T12:00:00Z,ETH-USD,BUY,2732.6456,1.21495926,3320.05,13.28,,Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 2691.94 vs EMA21 2687.95 at 2026-09-29T12:00:00Z close,6666.67,9985.06
