@@ -1,6 +1,6 @@
 # Bot A: EMA 9/21 on 4-hour candles
 
-Updated 2026-10-01 05:39 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
+Updated 2026-10-01 15:22 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
 
 **Rules:** EMA 9/21 crossover on 4-hour candles; market orders at the next open (0.40% fee + 0.05% slippage); ⅓ of equity per coin; entries halt at a 15% drawdown.
 
@@ -10,9 +10,9 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 |  | Bot | Buy & hold (⅓ each, never sells) |
 |---|---:|---:|
-| Equity | $9,896.39 | $10,120.23 |
-| Return | -1.04% | +1.20% |
-| Max drawdown | -1.0% | -1.0% |
+| Equity | $9,864.82 | $10,038.57 |
+| Return | -1.35% | +0.39% |
+| Max drawdown | -1.4% | -1.0% |
 
 ## Go-live bar
 
@@ -20,23 +20,26 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 | Check | Needed | Now | |
 |---|---|---|:-:|
-| Days of paper trading | 30+ | 2.4 | ⏳ |
+| Days of paper trading | 30+ | 2.8 | ⏳ |
 | Closed trades | 15+ | 1 | ⏳ |
-| Net return after fees | above 0 | -1.0% | ⏳ |
-| Beats buy & hold | yes | -1.0% vs +1.2% | ⏳ |
-| Max drawdown | under 15%, never halted | -1.0% | ✅ |
+| Net return after fees | above 0 | -1.4% | ⏳ |
+| Beats buy & hold | yes | -1.4% vs +0.4% | ⏳ |
+| Max drawdown | under 15%, never halted | -1.4% | ✅ |
 | Backtest out-of-sample beat buy & hold | yes | -58.7% vs -35.7% | ❌ |
 
 ## Open positions
 
-None. All cash.
+| Coin | Quantity | Entry | Now | Value | Unrealised P&L | Opened (UTC) |
+|---|---:|---:|---:|---:|---:|---|
+| ETH-USD | 1.213685 | $2,707.17 | $2,691.99 | $3,267.23 | -$31.57 | 2026-10-01 12:00 |
 
 ## Trades so far
 
-1 closed · 0% won · profit factor 0.00 · average win $0.00 · average loss $103.61 · fees $26.25
+1 closed · 0% won · profit factor 0.00 · average win $0.00 · average loss $103.61 · fees $39.39
 
 | Time (UTC) | Coin | Action | Price | P&L | Reason |
 |---|---|---|---:|---:|---|
+| 2026-10-01 12:00 | ETH-USD | BUY | $2,707.17 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 2686.96 vs EMA21 2685.38 at 2026-10-01T12:00:00Z close |
 | 2026-09-30 04:00 | ETH-USD | SELL | $2,668.97 | -$103.61 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 2683.04 vs EMA21 2684.57 at 2026-09-30T04:00:00Z close |
 | 2026-09-29 12:00 | ETH-USD | BUY | $2,732.65 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 2691.94 vs EMA21 2687.95 at 2026-09-29T12:00:00Z close |
 
