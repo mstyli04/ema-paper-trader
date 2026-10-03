@@ -1,6 +1,6 @@
 # Bot A: EMA 9/21 on 4-hour candles
 
-Updated 2026-10-03 19:10 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
+Updated 2026-10-03 22:49 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
 
 **Rules:** EMA 9/21 crossover on 4-hour candles; market orders at the next open (0.40% fee + 0.05% slippage); ⅓ of equity per coin; entries halt at a 15% drawdown.
 
@@ -10,8 +10,8 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 |  | Bot | Buy & hold (⅓ each, never sells) |
 |---|---:|---:|
-| Equity | $9,783.00 | $10,110.78 |
-| Return | -2.17% | +1.11% |
+| Equity | $9,782.02 | $10,113.68 |
+| Return | -2.18% | +1.14% |
 | Max drawdown | -2.8% | -2.8% |
 
 ## Go-live bar
@@ -20,7 +20,7 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 | Check | Needed | Now | |
 |---|---|---|:-:|
-| Days of paper trading | 30+ | 5.0 | ⏳ |
+| Days of paper trading | 30+ | 5.1 | ⏳ |
 | Closed trades | 15+ | 2 | ⏳ |
 | Net return after fees | above 0 | -2.2% | ⏳ |
 | Beats buy & hold | yes | -2.2% vs +1.1% | ⏳ |
@@ -31,8 +31,8 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 | Coin | Quantity | Entry | Now | Value | Unrealised P&L | Opened (UTC) |
 |---|---:|---:|---:|---:|---:|---|
-| BTC-USD | 0.038861 | $84,172.14 | $84,853.33 | $3,297.49 | $13.39 | 2026-10-01 16:00 |
-| SOL-USD | 27.104692 | $121.76 | $119.74 | $3,245.52 | -$67.98 | 2026-10-02 08:00 |
+| BTC-USD | 0.038861 | $84,172.14 | $84,793.42 | $3,295.16 | $11.06 | 2026-10-01 16:00 |
+| SOL-USD | 27.104692 | $121.76 | $119.79 | $3,246.87 | -$66.62 | 2026-10-02 08:00 |
 
 ## Trades so far
 
