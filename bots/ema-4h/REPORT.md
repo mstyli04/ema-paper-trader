@@ -1,6 +1,6 @@
 # Bot A: EMA 9/21 on 4-hour candles
 
-Updated 2026-10-04 23:00 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
+Updated 2026-10-05 05:24 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
 
 **Rules:** EMA 9/21 crossover on 4-hour candles; market orders at the next open (0.40% fee + 0.05% slippage); ⅓ of equity per coin; entries halt at a 15% drawdown.
 
@@ -10,8 +10,8 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 |  | Bot | Buy & hold (⅓ each, never sells) |
 |---|---:|---:|
-| Equity | $9,912.71 | $10,286.93 |
-| Return | -0.87% | +2.87% |
+| Equity | $9,789.53 | $10,159.06 |
+| Return | -2.10% | +1.59% |
 | Max drawdown | -2.8% | -2.8% |
 
 ## Go-live bar
@@ -20,10 +20,10 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 | Check | Needed | Now | |
 |---|---|---|:-:|
-| Days of paper trading | 30+ | 6.1 | ⏳ |
+| Days of paper trading | 30+ | 6.4 | ⏳ |
 | Closed trades | 15+ | 2 | ⏳ |
-| Net return after fees | above 0 | -0.9% | ⏳ |
-| Beats buy & hold | yes | -0.9% vs +2.9% | ⏳ |
+| Net return after fees | above 0 | -2.1% | ⏳ |
+| Beats buy & hold | yes | -2.1% vs +1.6% | ⏳ |
 | Max drawdown | under 15%, never halted | -2.8% | ✅ |
 | Backtest out-of-sample beat buy & hold | yes | -58.7% vs -35.7% | ❌ |
 
@@ -31,9 +31,9 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 | Coin | Quantity | Entry | Now | Value | Unrealised P&L | Opened (UTC) |
 |---|---:|---:|---:|---:|---:|---|
-| BTC-USD | 0.038861 | $84,172.14 | $86,423.99 | $3,358.53 | $74.43 | 2026-10-01 16:00 |
-| ETH-USD | 1.192419 | $2,706.33 | $2,730.88 | $3,256.35 | $16.36 | 2026-10-04 08:00 |
-| SOL-USD | 27.104692 | $121.76 | $121.67 | $3,297.83 | -$15.66 | 2026-10-02 08:00 |
+| BTC-USD | 0.038861 | $84,172.14 | $85,435.31 | $3,320.11 | $36.00 | 2026-10-01 16:00 |
+| ETH-USD | 1.192419 | $2,706.33 | $2,695.49 | $3,214.15 | -$25.84 | 2026-10-04 08:00 |
+| SOL-USD | 27.104692 | $121.76 | $120.10 | $3,255.27 | -$58.22 | 2026-10-02 08:00 |
 
 ## Trades so far
 
