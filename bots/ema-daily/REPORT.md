@@ -1,6 +1,6 @@
 # Bot B: EMA 9/21 on daily candles, limit orders
 
-Updated 2026-10-06 18:17 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
+Updated 2026-10-06 23:44 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
 
 **Rules:** Pre-registered candidate B1 (see CANDIDATES.md): EMA 9/21 crossover on daily candles; limit order 0.10% better than the next open (0.25% maker fee), or chase at that day's close (0.40% + 0.05%) if it doesn't fill; ⅓ of equity per coin; entries halt at a 25% drawdown.
 
@@ -10,8 +10,8 @@ Started 2026-09-28 19:59 UTC with $10,000.00 of paper money. Go-live review on *
 
 |  | Bot | Buy & hold (⅓ each, never sells) |
 |---|---:|---:|
-| Equity | $10,000.00 | $10,205.84 |
-| Return | 0.00% | +2.06% |
+| Equity | $10,000.00 | $10,192.61 |
+| Return | 0.00% | +1.93% |
 | Max drawdown | 0.0% | -2.7% |
 
 ## Go-live bar
@@ -20,7 +20,7 @@ Started 2026-09-28 19:59 UTC with $10,000.00 of paper money. Go-live review on *
 
 | Check | Needed | Now | |
 |---|---|---|:-:|
-| Days of paper trading | 90+ | 7.9 | ⏳ |
+| Days of paper trading | 90+ | 8.2 | ⏳ |
 | Closed trades | 4+ | 0 | ⏳ |
 | Net return after fees | above 0 | 0.0% | ⏳ |
 | Max drawdown | under 50% of buy & hold's (-2.7%) | 0.0% | ✅ |
