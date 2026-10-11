@@ -2,21 +2,26 @@
   "version": 1,
   "startedAt": 1790624208,
   "startEquity": 10000,
-  "cash": 9542.967185337644,
+  "cash": 6361.978123558429,
   "positions": {
     "ETH-USD": null,
-    "BTC-USD": null,
+    "BTC-USD": {
+      "qty": 0.03789076048250477,
+      "entryPrice": 83617.10766000001,
+      "entryTime": 1791748800,
+      "costBasis": 3180.989061779215
+    },
     "SOL-USD": null
   },
   "lastProcessed": {
-    "BTC-USD": 1791705600,
-    "ETH-USD": 1791705600,
-    "SOL-USD": 1791705600
+    "BTC-USD": 1791734400,
+    "ETH-USD": 1791734400,
+    "SOL-USD": 1791734400
   },
   "lastPrice": {
-    "BTC-USD": 83057.98,
-    "ETH-USD": 2504.09,
-    "SOL-USD": 109.57
+    "BTC-USD": 83573.69,
+    "ETH-USD": 2533.05,
+    "SOL-USD": 111.01
   },
   "peakEquity": 10000,
   "halted": false,
@@ -26,6 +31,6 @@
     "ETH-USD": 2672.41,
     "SOL-USD": 118.36
   },
-  "lastRunAt": 1791730340,
+  "lastRunAt": 1791749431,
   "lastDailySummary": "2026-10-11"
 }
