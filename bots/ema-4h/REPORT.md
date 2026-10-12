@@ -1,6 +1,6 @@
 # Bot A: EMA 9/21 on 4-hour candles
 
-Updated 2026-10-12 05:45 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
+Updated 2026-10-12 17:45 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
 
 **Rules:** EMA 9/21 crossover on 4-hour candles; market orders at the next open (0.40% fee + 0.05% slippage); ⅓ of equity per coin; entries halt at a 15% drawdown.
 
@@ -10,9 +10,9 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 |  | Bot | Buy & hold (⅓ each, never sells) |
 |---|---:|---:|
-| Equity | $9,540.25 | $9,713.69 |
-| Return | -4.60% | -2.86% |
-| Max drawdown | -4.7% | -8.9% |
+| Equity | $9,396.10 | $9,435.10 |
+| Return | -6.04% | -5.65% |
+| Max drawdown | -6.0% | -8.9% |
 
 ## Go-live bar
 
@@ -20,25 +20,27 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 | Check | Needed | Now | |
 |---|---|---|:-:|
-| Days of paper trading | 30+ | 13.4 | ⏳ |
+| Days of paper trading | 30+ | 13.9 | ⏳ |
 | Closed trades | 15+ | 5 | ⏳ |
-| Net return after fees | above 0 | -4.6% | ⏳ |
-| Beats buy & hold | yes | -4.6% vs -2.9% | ⏳ |
-| Max drawdown | under 15%, never halted | -4.7% | ✅ |
+| Net return after fees | above 0 | -6.0% | ⏳ |
+| Beats buy & hold | yes | -6.0% vs -5.6% | ⏳ |
+| Max drawdown | under 15%, never halted | -6.0% | ✅ |
 | Backtest out-of-sample beat buy & hold | yes | -58.7% vs -35.7% | ❌ |
 
 ## Open positions
 
 | Coin | Quantity | Entry | Now | Value | Unrealised P&L | Opened (UTC) |
 |---|---:|---:|---:|---:|---:|---|
-| BTC-USD | 0.037891 | $83,617.11 | $83,879.78 | $3,178.27 | -$2.72 | 2026-10-11 20:00 |
+| BTC-USD | 0.037891 | $83,617.11 | $82,365.94 | $3,120.91 | -$60.08 | 2026-10-11 20:00 |
+| ETH-USD | 1.236012 | $2,562.85 | $2,502.89 | $3,093.60 | -$86.78 | 2026-10-12 08:00 |
 
 ## Trades so far
 
-5 closed · 0% won · profit factor 0.00 · average win $0.00 · average loss $91.41 · fees $142.58
+5 closed · 0% won · profit factor 0.00 · average win $0.00 · average loss $91.41 · fees $155.25
 
 | Time (UTC) | Coin | Action | Price | P&L | Reason |
 |---|---|---|---:|---:|---|
+| 2026-10-12 08:00 | ETH-USD | BUY | $2,562.85 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 2530.01 vs EMA21 2527.73 at 2026-10-12T08:00:00Z close |
 | 2026-10-11 20:00 | BTC-USD | BUY | $83,617.11 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 83160.29 vs EMA21 83105.61 at 2026-10-11T20:00:00Z close |
 | 2026-10-07 04:00 | SOL-USD | SELL | $118.16 | -$123.59 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 120.07 vs EMA21 120.18 at 2026-10-07T04:00:00Z close |
 | 2026-10-07 04:00 | ETH-USD | SELL | $2,609.08 | -$141.31 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 2683.93 vs EMA21 2693.78 at 2026-10-07T04:00:00Z close |
