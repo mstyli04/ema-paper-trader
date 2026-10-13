@@ -13,3 +13,4 @@ time_utc,symbol,action,price,qty,notional,fee,pnl,reason,cash_after,equity_after
 2026-10-12T08:00:00Z,ETH-USD,BUY,2562.8508,1.23601164,3167.71,12.67,,Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 2530.01 vs EMA21 2527.73 at 2026-10-12T08:00:00Z close,3181.59,9526.90
 2026-10-12T20:00:00Z,BTC-USD,SELL,82721.5385,0.03789076,3134.38,12.54,-59.14,Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 83154.39 vs EMA21 83162.69 at 2026-10-12T20:00:00Z close,6303.44,9416.11
 2026-10-13T00:00:00Z,ETH-USD,SELL,2442.5981,1.23601164,3019.08,12.08,-173.38,Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 2511.98 vs EMA21 2520.39 at 2026-10-13T00:00:00Z close,9310.44,9310.44
+2026-10-13T12:00:00Z,BTC-USD,BUY,83291.6950,0.03711194,3091.12,12.36,,Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 83135.57 vs EMA21 83128.08 at 2026-10-13T12:00:00Z close,6206.96,9296.53
