@@ -1,6 +1,6 @@
 # Bot A: EMA 9/21 on 4-hour candles
 
-Updated 2026-10-22 19:58 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
+Updated 2026-10-22 23:14 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
 
 **Rules:** EMA 9/21 crossover on 4-hour candles; market orders at the next open (0.40% fee + 0.05% slippage); ⅓ of equity per coin; entries halt at a 15% drawdown.
 
@@ -10,9 +10,9 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 |  | Bot | Buy & hold (⅓ each, never sells) |
 |---|---:|---:|
-| Equity | $8,866.53 | $9,143.23 |
-| Return | -11.33% | -8.57% |
-| Max drawdown | -11.3% | -12.7% |
+| Equity | $8,837.46 | $9,130.19 |
+| Return | -11.63% | -8.70% |
+| Max drawdown | -11.6% | -12.7% |
 
 ## Go-live bar
 
@@ -20,26 +20,25 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 | Check | Needed | Now | |
 |---|---|---|:-:|
-| Days of paper trading | 30+ | 24.0 | ⏳ |
-| Closed trades | 15+ | 11 | ⏳ |
-| Net return after fees | above 0 | -11.3% | ⏳ |
-| Beats buy & hold | yes | -11.3% vs -8.6% | ⏳ |
-| Max drawdown | under 15%, never halted | -11.3% | ✅ |
+| Days of paper trading | 30+ | 24.2 | ⏳ |
+| Closed trades | 15+ | 13 | ⏳ |
+| Net return after fees | above 0 | -11.6% | ⏳ |
+| Beats buy & hold | yes | -11.6% vs -8.7% | ⏳ |
+| Max drawdown | under 15%, never halted | -11.6% | ✅ |
 | Backtest out-of-sample beat buy & hold | yes | -58.7% vs -35.7% | ❌ |
 
 ## Open positions
 
-| Coin | Quantity | Entry | Now | Value | Unrealised P&L | Opened (UTC) |
-|---|---:|---:|---:|---:|---:|---|
-| BTC-USD | 0.036541 | $82,555.68 | $81,393.59 | $2,974.17 | -$54.53 | 2026-10-20 16:00 |
-| SOL-USD | 28.466517 | $105.81 | $103.57 | $2,948.28 | -$75.90 | 2026-10-20 16:00 |
+None. All cash.
 
 ## Trades so far
 
-11 closed · 0% won · profit factor 0.00 · average win $0.00 · average loss $91.19 · fees $300.89
+13 closed · 0% won · profit factor 0.00 · average win $0.00 · average loss $89.43 · fees $324.56
 
 | Time (UTC) | Coin | Action | Price | P&L | Reason |
 |---|---|---|---:|---:|---|
+| 2026-10-22 20:00 | SOL-USD | SELL | $103.45 | -$91.14 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 105.07 vs EMA21 105.27 at 2026-10-22T20:00:00Z close |
+| 2026-10-22 20:00 | BTC-USD | SELL | $81,340.80 | -$68.35 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 82320.25 vs EMA21 82427.38 at 2026-10-22T20:00:00Z close |
 | 2026-10-22 16:00 | ETH-USD | SELL | $2,394.91 | -$89.14 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 2432.20 vs EMA21 2432.70 at 2026-10-22T16:00:00Z close |
 | 2026-10-21 00:00 | ETH-USD | BUY | $2,447.81 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 2418.56 vs EMA21 2415.31 at 2026-10-21T00:00:00Z close |
 | 2026-10-20 16:00 | SOL-USD | BUY | $105.81 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 104.60 vs EMA21 104.47 at 2026-10-20T16:00:00Z close |
@@ -53,7 +52,5 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 | 2026-10-13 00:00 | ETH-USD | SELL | $2,442.60 | -$173.38 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 2511.98 vs EMA21 2520.39 at 2026-10-13T00:00:00Z close |
 | 2026-10-12 20:00 | BTC-USD | SELL | $82,721.54 | -$59.14 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 83154.39 vs EMA21 83162.69 at 2026-10-12T20:00:00Z close |
 | 2026-10-12 08:00 | ETH-USD | BUY | $2,562.85 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 2530.01 vs EMA21 2527.73 at 2026-10-12T08:00:00Z close |
-| 2026-10-11 20:00 | BTC-USD | BUY | $83,617.11 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 83160.29 vs EMA21 83105.61 at 2026-10-11T20:00:00Z close |
-| 2026-10-07 04:00 | SOL-USD | SELL | $118.16 | -$123.59 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 120.07 vs EMA21 120.18 at 2026-10-07T04:00:00Z close |
 
 Full history: [`ledger.csv`](ledger.csv) · equity every tick: [`equity.csv`](equity.csv) · backtest: [BACKTEST.md](../../backtest/BACKTEST.md)
