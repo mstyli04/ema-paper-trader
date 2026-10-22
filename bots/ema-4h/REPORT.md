@@ -1,6 +1,6 @@
 # Bot A: EMA 9/21 on 4-hour candles
 
-Updated 2026-10-22 13:43 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
+Updated 2026-10-22 19:58 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
 
 **Rules:** EMA 9/21 crossover on 4-hour candles; market orders at the next open (0.40% fee + 0.05% slippage); ⅓ of equity per coin; entries halt at a 15% drawdown.
 
@@ -10,9 +10,9 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 |  | Bot | Buy & hold (⅓ each, never sells) |
 |---|---:|---:|
-| Equity | $8,927.66 | $9,206.64 |
-| Return | -10.72% | -7.93% |
-| Max drawdown | -10.7% | -12.7% |
+| Equity | $8,866.53 | $9,143.23 |
+| Return | -11.33% | -8.57% |
+| Max drawdown | -11.3% | -12.7% |
 
 ## Go-live bar
 
@@ -20,27 +20,27 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 | Check | Needed | Now | |
 |---|---|---|:-:|
-| Days of paper trading | 30+ | 23.8 | ⏳ |
-| Closed trades | 15+ | 10 | ⏳ |
-| Net return after fees | above 0 | -10.7% | ⏳ |
-| Beats buy & hold | yes | -10.7% vs -7.9% | ⏳ |
-| Max drawdown | under 15%, never halted | -10.7% | ✅ |
+| Days of paper trading | 30+ | 24.0 | ⏳ |
+| Closed trades | 15+ | 11 | ⏳ |
+| Net return after fees | above 0 | -11.3% | ⏳ |
+| Beats buy & hold | yes | -11.3% vs -8.6% | ⏳ |
+| Max drawdown | under 15%, never halted | -11.3% | ✅ |
 | Backtest out-of-sample beat buy & hold | yes | -58.7% vs -35.7% | ❌ |
 
 ## Open positions
 
 | Coin | Quantity | Entry | Now | Value | Unrealised P&L | Opened (UTC) |
 |---|---:|---:|---:|---:|---:|---|
-| BTC-USD | 0.036541 | $82,555.68 | $81,527.75 | $2,979.07 | -$49.63 | 2026-10-20 16:00 |
-| ETH-USD | 1.233386 | $2,447.81 | $2,404.61 | $2,965.81 | -$65.36 | 2026-10-21 00:00 |
-| SOL-USD | 28.466517 | $105.81 | $104.71 | $2,980.73 | -$43.44 | 2026-10-20 16:00 |
+| BTC-USD | 0.036541 | $82,555.68 | $81,393.59 | $2,974.17 | -$54.53 | 2026-10-20 16:00 |
+| SOL-USD | 28.466517 | $105.81 | $103.57 | $2,948.28 | -$75.90 | 2026-10-20 16:00 |
 
 ## Trades so far
 
-10 closed · 0% won · profit factor 0.00 · average win $0.00 · average loss $91.39 · fees $289.07
+11 closed · 0% won · profit factor 0.00 · average win $0.00 · average loss $91.19 · fees $300.89
 
 | Time (UTC) | Coin | Action | Price | P&L | Reason |
 |---|---|---|---:|---:|---|
+| 2026-10-22 16:00 | ETH-USD | SELL | $2,394.91 | -$89.14 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 2432.20 vs EMA21 2432.70 at 2026-10-22T16:00:00Z close |
 | 2026-10-21 00:00 | ETH-USD | BUY | $2,447.81 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 2418.56 vs EMA21 2415.31 at 2026-10-21T00:00:00Z close |
 | 2026-10-20 16:00 | SOL-USD | BUY | $105.81 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 104.60 vs EMA21 104.47 at 2026-10-20T16:00:00Z close |
 | 2026-10-20 16:00 | BTC-USD | BUY | $82,555.68 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 81893.50 vs EMA21 81860.08 at 2026-10-20T16:00:00Z close |
@@ -55,6 +55,5 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 | 2026-10-12 08:00 | ETH-USD | BUY | $2,562.85 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 2530.01 vs EMA21 2527.73 at 2026-10-12T08:00:00Z close |
 | 2026-10-11 20:00 | BTC-USD | BUY | $83,617.11 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 83160.29 vs EMA21 83105.61 at 2026-10-11T20:00:00Z close |
 | 2026-10-07 04:00 | SOL-USD | SELL | $118.16 | -$123.59 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 120.07 vs EMA21 120.18 at 2026-10-07T04:00:00Z close |
-| 2026-10-07 04:00 | ETH-USD | SELL | $2,609.08 | -$141.31 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 2683.93 vs EMA21 2693.78 at 2026-10-07T04:00:00Z close |
 
 Full history: [`ledger.csv`](ledger.csv) · equity every tick: [`equity.csv`](equity.csv) · backtest: [BACKTEST.md](../../backtest/BACKTEST.md)
