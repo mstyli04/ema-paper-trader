@@ -1,6 +1,6 @@
 # Bot A: EMA 9/21 on 4-hour candles
 
-Updated 2026-10-27 20:36 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
+Updated 2026-10-28 05:25 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
 
 **Rules:** EMA 9/21 crossover on 4-hour candles; market orders at the next open (0.40% fee + 0.05% slippage); ⅓ of equity per coin; entries halt at a 15% drawdown.
 
@@ -10,8 +10,8 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 |  | Bot | Buy & hold (⅓ each, never sells) |
 |---|---:|---:|
-| Equity | $8,837.46 | $8,978.97 |
-| Return | -11.63% | -10.21% |
+| Equity | $8,837.46 | $9,033.73 |
+| Return | -11.63% | -9.66% |
 | Max drawdown | -11.6% | -14.0% |
 
 ## Go-live bar
@@ -20,10 +20,10 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 | Check | Needed | Now | |
 |---|---|---|:-:|
-| Days of paper trading | 30+ | 29.0 | ⏳ |
+| Days of paper trading | 30+ | 29.4 | ⏳ |
 | Closed trades | 15+ | 13 | ⏳ |
 | Net return after fees | above 0 | -11.6% | ⏳ |
-| Beats buy & hold | yes | -11.6% vs -10.2% | ⏳ |
+| Beats buy & hold | yes | -11.6% vs -9.7% | ⏳ |
 | Max drawdown | under 15%, never halted | -11.6% | ✅ |
 | Backtest out-of-sample beat buy & hold | yes | -58.7% vs -35.7% | ❌ |
 
