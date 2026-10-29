@@ -1,18 +1,18 @@
 # Bot A: EMA 9/21 on 4-hour candles
 
-Updated 2026-10-28 20:57 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
+Updated 2026-10-29 05:35 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
 
 **Rules:** EMA 9/21 crossover on 4-hour candles; market orders at the next open (0.40% fee + 0.05% slippage); ⅓ of equity per coin; entries halt at a 15% drawdown.
 
-**Status:** Running. Checks the market every 4 hours.
+**Status:** Entries halted: equity $8422.44 fell more than 15% below its $10000.00 peak on 2026-10-29T04:00:00Z. Exits still run. Needs a human review.
 
 Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on **2026-10-28**.
 
 |  | Bot | Buy & hold (⅓ each, never sells) |
 |---|---:|---:|
-| Equity | $8,639.53 | $9,066.84 |
-| Return | -13.60% | -9.33% |
-| Max drawdown | -13.6% | -14.0% |
+| Equity | $8,439.86 | $8,934.65 |
+| Return | -15.60% | -10.65% |
+| Max drawdown | -15.6% | -14.0% |
 
 ## Go-live bar
 
@@ -20,27 +20,27 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 | Check | Needed | Now | |
 |---|---|---|:-:|
-| Days of paper trading | 30+ | 30.1 | ✅ |
-| Closed trades | 15+ | 15 | ✅ |
-| Net return after fees | above 0 | -13.6% | ❌ |
-| Beats buy & hold | yes | -13.6% vs -9.3% | ❌ |
-| Max drawdown | under 15%, never halted | -13.6% | ✅ |
+| Days of paper trading | 30+ | 30.4 | ✅ |
+| Closed trades | 15+ | 17 | ✅ |
+| Net return after fees | above 0 | -15.6% | ❌ |
+| Beats buy & hold | yes | -15.6% vs -10.7% | ❌ |
+| Max drawdown | under 15%, never halted | -15.6% | ❌ |
 | Backtest out-of-sample beat buy & hold | yes | -58.7% vs -35.7% | ❌ |
 
 ## Open positions
 
 | Coin | Quantity | Entry | Now | Value | Unrealised P&L | Opened (UTC) |
 |---|---:|---:|---:|---:|---:|---|
-| BTC-USD | 0.036219 | $81,009.84 | $81,184.20 | $2,940.40 | -$5.42 | 2026-10-28 08:00 |
-| ETH-USD | 1.219661 | $2,370.97 | $2,357.27 | $2,875.07 | -$28.28 | 2026-10-28 20:00 |
-| SOL-USD | 27.597557 | $103.03 | $102.33 | $2,824.06 | -$30.73 | 2026-10-28 20:00 |
+| BTC-USD | 0.036219 | $81,009.84 | $80,217.51 | $2,905.39 | -$40.43 | 2026-10-28 08:00 |
 
 ## Trades so far
 
-15 closed · 0% won · profit factor 0.00 · average win $0.00 · average loss $86.40 · fees $405.78
+17 closed · 0% won · profit factor 0.00 · average win $0.00 · average loss $89.39 · fees $428.00
 
 | Time (UTC) | Coin | Action | Price | P&L | Reason |
 |---|---|---|---:|---:|---|
+| 2026-10-29 04:00 | SOL-USD | SELL | $99.51 | -$119.54 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 101.37 vs EMA21 101.45 at 2026-10-29T04:00:00Z close |
+| 2026-10-29 04:00 | ETH-USD | SELL | $2,304.30 | -$104.13 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 2340.58 vs EMA21 2342.34 at 2026-10-29T04:00:00Z close |
 | 2026-10-28 20:00 | SOL-USD | BUY | $103.03 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 101.70 vs EMA21 101.58 at 2026-10-28T20:00:00Z close |
 | 2026-10-28 20:00 | ETH-USD | BUY | $2,370.97 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 2347.38 vs EMA21 2344.90 at 2026-10-28T20:00:00Z close |
 | 2026-10-28 16:00 | SOL-USD | SELL | $100.85 | -$74.34 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 101.39 vs EMA21 101.44 at 2026-10-28T16:00:00Z close |
@@ -54,7 +54,5 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 | 2026-10-21 00:00 | ETH-USD | BUY | $2,447.81 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 2418.56 vs EMA21 2415.31 at 2026-10-21T00:00:00Z close |
 | 2026-10-20 16:00 | SOL-USD | BUY | $105.81 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 104.60 vs EMA21 104.47 at 2026-10-20T16:00:00Z close |
 | 2026-10-20 16:00 | BTC-USD | BUY | $82,555.68 |  | Bullish crossover: EMA9 crossed above EMA21; market order at the open. EMA9 81893.50 vs EMA21 81860.08 at 2026-10-20T16:00:00Z close |
-| 2026-10-20 12:00 | SOL-USD | SELL | $103.93 | -$62.61 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 104.31 vs EMA21 104.34 at 2026-10-20T12:00:00Z close |
-| 2026-10-20 08:00 | BTC-USD | SELL | $81,419.09 | -$70.95 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 81826.10 vs EMA21 81835.42 at 2026-10-20T08:00:00Z close |
 
 Full history: [`ledger.csv`](ledger.csv) · equity every tick: [`equity.csv`](equity.csv) · backtest: [BACKTEST.md](../../backtest/BACKTEST.md)
