@@ -9,14 +9,14 @@
     "SOL-USD": null
   },
   "lastProcessed": {
-    "BTC-USD": 1795032000,
-    "ETH-USD": 1795032000,
-    "SOL-USD": 1795032000
+    "BTC-USD": 1795075200,
+    "ETH-USD": 1795075200,
+    "SOL-USD": 1795075200
   },
   "lastPrice": {
-    "BTC-USD": 62643.09,
-    "ETH-USD": 1774.21,
-    "SOL-USD": 73.25
+    "BTC-USD": 63854.65,
+    "ETH-USD": 1802.9,
+    "SOL-USD": 74.74
   },
   "peakEquity": 10000,
   "halted": true,
@@ -26,6 +26,6 @@
     "ETH-USD": 2672.41,
     "SOL-USD": 118.36
   },
-  "lastRunAt": 1795053009,
-  "lastDailySummary": "2026-11-18"
+  "lastRunAt": 1795092618,
+  "lastDailySummary": "2026-11-19"
 }
