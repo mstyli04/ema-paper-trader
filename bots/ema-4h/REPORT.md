@@ -1,6 +1,6 @@
 # Bot A: EMA 9/21 on 4-hour candles
 
-Updated 2026-11-27 00:29 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
+Updated 2026-11-27 13:43 UTC. Paper money only: no real orders are ever sent. [← Both bots](../../REPORT.md)
 
 **Rules:** EMA 9/21 crossover on 4-hour candles; market orders at the next open (0.40% fee + 0.05% slippage); ⅓ of equity per coin; entries halt at a 15% drawdown.
 
@@ -10,8 +10,8 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 |  | Bot | Buy & hold (⅓ each, never sells) |
 |---|---:|---:|
-| Equity | $8,409.48 | $6,521.42 |
-| Return | -15.91% | -34.79% |
+| Equity | $8,409.48 | $6,658.90 |
+| Return | -15.91% | -33.41% |
 | Max drawdown | -15.9% | -39.4% |
 
 ## Go-live bar
@@ -20,10 +20,10 @@ Started 2026-09-28 19:36 UTC with $10,000.00 of paper money. Go-live review on *
 
 | Check | Needed | Now | |
 |---|---|---|:-:|
-| Days of paper trading | 30+ | 59.2 | ✅ |
+| Days of paper trading | 30+ | 59.8 | ✅ |
 | Closed trades | 15+ | 18 | ✅ |
 | Net return after fees | above 0 | -15.9% | ❌ |
-| Beats buy & hold | yes | -15.9% vs -34.8% | ✅ |
+| Beats buy & hold | yes | -15.9% vs -33.4% | ✅ |
 | Max drawdown | under 15%, never halted | -15.9% | ❌ |
 | Backtest out-of-sample beat buy & hold | yes | -58.7% vs -35.7% | ❌ |
 
@@ -37,6 +37,7 @@ None. All cash.
 
 | Time (UTC) | Coin | Action | Price | P&L | Reason |
 |---|---|---|---:|---:|---|
+| 2026-11-27 04:00 | ETH-USD | SKIP | $1,726.36 |  | Bullish crossover skipped: entries halted (equity $8422.44 fell more than 15% below its $10000.00 peak on 2026-10-29T04:00:00Z). EMA9 1695.66 vs EMA21 1691.85 at 2026-11-27T04:00:00Z close |
 | 2026-11-26 20:00 | BTC-USD | SKIP | $60,641.82 |  | Bullish crossover skipped: entries halted (equity $8422.44 fell more than 15% below its $10000.00 peak on 2026-10-29T04:00:00Z). EMA9 60262.97 vs EMA21 60214.62 at 2026-11-26T20:00:00Z close |
 | 2026-11-26 16:00 | SOL-USD | SKIP | $70.96 |  | Bullish crossover skipped: entries halted (equity $8422.44 fell more than 15% below its $10000.00 peak on 2026-10-29T04:00:00Z). EMA9 70.28 vs EMA21 70.27 at 2026-11-26T16:00:00Z close |
 | 2026-11-23 16:00 | BTC-USD | SKIP | $62,822.81 |  | Bullish crossover skipped: entries halted (equity $8422.44 fell more than 15% below its $10000.00 peak on 2026-10-29T04:00:00Z). EMA9 61204.35 vs EMA21 60997.78 at 2026-11-23T16:00:00Z close |
@@ -51,6 +52,5 @@ None. All cash.
 | 2026-11-02 08:00 | ETH-USD | SKIP | $2,281.61 |  | Bullish crossover skipped: entries halted (equity $8422.44 fell more than 15% below its $10000.00 peak on 2026-10-29T04:00:00Z). EMA9 2272.57 vs EMA21 2272.49 at 2026-11-02T08:00:00Z close |
 | 2026-10-29 16:00 | BTC-USD | SKIP | $81,698.55 |  | Bullish crossover skipped: entries halted (equity $8422.44 fell more than 15% below its $10000.00 peak on 2026-10-29T04:00:00Z). EMA9 80654.79 vs EMA21 80598.30 at 2026-10-29T16:00:00Z close |
 | 2026-10-29 08:00 | BTC-USD | SELL | $79,697.43 | -$70.82 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 80477.96 vs EMA21 80531.36 at 2026-10-29T08:00:00Z close |
-| 2026-10-29 04:00 | SOL-USD | SELL | $99.51 | -$119.54 | Bearish crossover: EMA9 crossed below EMA21; market order at the open. EMA9 101.37 vs EMA21 101.45 at 2026-10-29T04:00:00Z close |
 
 Full history: [`ledger.csv`](ledger.csv) · equity every tick: [`equity.csv`](equity.csv) · backtest: [BACKTEST.md](../../backtest/BACKTEST.md)
